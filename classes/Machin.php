@@ -1,6 +1,6 @@
 <?php
 
-class Machin extends Test
+final class Machin extends Test
 {
     private float $taille;
 
