@@ -1,5 +1,6 @@
 <?php
 date_default_timezone_set("Europe/Paris");
+ini_set('display_errors', '1');
 
 spl_autoload_register(function ($className)
 {
@@ -15,5 +16,7 @@ $message->bonjour("Michel");
 $homme = new Test();
 
 $homme->setAge(42);
+
+echo $homme->age;
 
 var_dump($homme);
