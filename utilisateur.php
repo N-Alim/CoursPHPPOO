@@ -12,3 +12,4 @@ $utilisateur1 = new Administrateur("Michel", "1234");
 var_dump($utilisateur1);
 
 echo $utilisateur1->getName();
+echo $utilisateur1->choucroute();

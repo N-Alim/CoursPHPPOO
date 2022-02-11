@@ -2,6 +2,20 @@
 
 class Administrateur extends Utilisateur implements NouvelUtilisateur
 {
+    // __call() et __callStatic() (similaire mais pour non statique et statique)
+
+    public function __call($methode, $arguments)
+    {
+        echo "Methode : $methode<br />";
+        var_dump($arguments);
+    }
+    
+    private function display()
+    {
+        echo "Rien";
+    }
+
+
     public function getName()
     {
         echo parent::getName();
