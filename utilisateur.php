@@ -31,6 +31,24 @@ $addition = function($a, $b)
 
 echo $addition(10, 20.2);
 
+$anonyme = new class 
+{
+    public $nom;
+
+    public function setNom(string $nom)
+    {
+        $this->nom = $nom;
+    }
+
+    public function getNom()
+    {
+        return $this->nom;
+    }
+};
+
+$anonyme->setNom("Michel");
+echo $anonyme->getNom();
+
 // Méthode anonyme et closure (les () appellent la méthode)
 
 (function()
