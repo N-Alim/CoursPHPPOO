@@ -10,6 +10,20 @@ class Administrateur extends Utilisateur implements NouvelUtilisateur
         var_dump($arguments);
     }
     
+
+    // __get() et __set()
+
+
+    public function __get($nomPropriete)
+    {
+        echo "Propiété : $nomPropriete";
+    }
+
+    public function __set($nomPropriete, $value)
+    {
+        echo "Propiété : $nomPropriete avec valeur : $value";
+    }
+
     private function display()
     {
         echo "Rien";

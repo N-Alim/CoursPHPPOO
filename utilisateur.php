@@ -9,7 +9,9 @@ spl_autoload_register(function ($className)
 
 $utilisateur1 = new Administrateur("Michel", "1234");
 
-var_dump($utilisateur1);
+// var_dump($utilisateur1);
 
-echo $utilisateur1->getName();
-echo $utilisateur1->choucroute();
+// echo $utilisateur1->getName();
+// echo $utilisateur1->choucroute();
+$utilisateur1->truc;
+$utilisateur1->machine = 22;
