@@ -24,6 +24,13 @@ class Administrateur extends Utilisateur implements NouvelUtilisateur
         echo "Propiété : $nomPropriete avec valeur : $value";
     }
 
+    // __toString()
+    public function  __toString()
+    {
+        return "Bien tenté";
+    }
+
+
     private function display()
     {
         echo "Rien";
