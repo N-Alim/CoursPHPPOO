@@ -7,4 +7,9 @@ class Administrateur extends Utilisateur
         echo parent::getName();
         echo "cela marche";
     }
+
+    public function getRole()
+    {
+        return self::ROLE;
+    }
 }
