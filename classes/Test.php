@@ -2,8 +2,21 @@
 
 class Test
 {
-    public function bonjour() : void
+    private int $age;
+
+    public function bonjour($truc) : void
     {
-        echo "Bonjour";
+        echo "Bonjour $truc";
     }
+
+    public function getAge() : int
+    {
+        return $this->age;
+    }
+
+    public function setAge(int $configAge) : void
+    {
+        $this->age = $configAge;
+    }
+
 }
