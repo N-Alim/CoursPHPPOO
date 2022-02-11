@@ -10,6 +10,8 @@ $message = new Test();
 
 $message->bonjour("Michel");
 
+//@ devant un appel de méthode désactive l'affichage des erreurs
+
 $homme = new Test();
 
 $homme->setAge(42);
